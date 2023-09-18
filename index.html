@@ -3,91 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My page</title>
+    <!-- bootstrap CDN link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .grad {
-        background-image: linear-gradient(45deg,#999999,#404040);
-        }
-    </style>
+    
+    <!-- CustomfileLink -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <!-- Title of the page  -->
+    <title>Document</title>
 </head>
-<body class="grad">
-<div class="container bg-light"> 
-        <!-- the menu div  -->
-        <div class="row border">
-            <!-- Div menu list div  -->
+<body>
+    <!-- Header section -->
+    <header class="header_wraper">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-                        <div class="col-6 my-2 navbar-brand container">
-                            <h3>Site Under Progress....  </h3>
-                        </div>
-                        <div class="col-4">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><b>Home</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Works</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
-                                </li>
-                                <button class="nav-link" href="#">Let's Chat </button>
-                            </ul>
-                        </div>
-                    </nav>
+              <a class="navbar-brand" href="#">
+                <!-- change with some logo -->
+                <img src="Icon/page_logo.png" alt="Logo" class="img-fluid">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <!-- Banner Section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <h2 class="text-uppercase position-relative">Hello</h2>
+                    <h1 class="text-uppercase">I am Suvit Debbarma</h1>
+                    <h5 class="text-uppercase">Application Developer</h5>
+                    <div class="mt-5">
+                        <a href="#" class="main-btn primary-btn">Hire Me</a>
+                        <a href="https://drive.google.com/file/d/18TB5HUauCQ5vVFhR1mQ-ECTAK7FGcgGU/view?usp=drive_link" target="_blank" class="main-btn secondary-btn ms-4">Get CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <div class="top-right-img">
+                        <img src="Kid_with_PC.png" alt="Profile_Picture" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row container border">
-            <!-- DIv Content  -->
-            <div class="col container-fluid border"> 
-                <!-- left   -->
-                <div class="col container border">
-                    <!-- Div for Top in Left -->
-                    <h2> Hi!  I AM - FrontEnd , BackEnd </h2> <br>
-                    <h2 class="display-1"> Suvit Debbarma </h2>
-                    <p class="display-4"> Software Engnieer at  @ Co-operate </p>
-                    <p> Programing Skills - Python , JavaScript , Java  </p>
-                
-                    <div class="container">
-                        <button type="button" class="btn btn-danger">Hire Me</button>
-                        <span><a href="#">Projects </a></span>
-                        <div>
-                            <p>
-                                <span>something or some details</span> 
-                            </p>
-                            <p><h5>Contact</h5>
-                                <h6>something@gmail.com</h6>
-                            </p>
+    </section>
+
+    <!-- Banner Section Exit -->
+
+
+    <!-- About Section  -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img src="guy_with_laptop.webp" alt="about_us" class="img-fluid">
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h3>Let's <br>Introduce about <br> Myself</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates cupiditate, deleniti quibusdam officiis, non, at illum eos hic commodi dolores voluptatem? Dolorum iure nobis quis ullam voluptatem aspernatur quaerat.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae culpa amet praesentium veritatis quod mollitia nisi cupiditate recusandae, rem aspernatur ab consequatur sapiente nesciunt saepe doloribus ratione qui ipsa quam, esse cumque possimus minus? Reprehenderit et quis, aspernatur perferendis eligendi soluta dicta?</p>
+                    <a href="https://drive.google.com/file/d/18TB5HUauCQ5vVFhR1mQ-ECTAK7FGcgGU/view?usp=drive_link" target="_blank" class="main-btn primary-btn mt-4">Download CV</a>
+                </div>
+            </div>
+            <!-- for client icons and experience section -->
+            <div class="row justify-content-center pt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="Icon/company_IBM.png" alt="Client logo" class="img-fluid">
+                            </class>
                         </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="Icon/company_shell.png" alt="Client logo" class="img-fluid">
+                            </class>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="#" alt="Client logo" class="img-fluid">
+                            </class>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="#" alt="Client logo" class="img-fluid">
+                            </class>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="#" alt="Client logo" class="img-fluid">
+                            </class>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <class class="single-log-item">
+                                <img src="#" alt="Client logo" class="img-fluid">
+                            </class>
+                        </div> -->
                     </div>
                 </div>
-                <div class="col container border bg-dark text-white">
-                    <!-- Div for Bottom in Left -->
-                    <div class="row">
-                        <div class="col container">
-                            <h3>Project Statistic</h3>
-                            <button type="button" class="btn btn-warning">Know more</button>
+                <div class="offset-lg-2 col-lg-4 col-md-10">
+                    <div class="client-info">
+                        <div class="d-flex">
+                            <span class="large">2</span>
+                            <span class="smll">Years <Br> Experience <br> Working </Br></span>
                         </div>
-                        <div class="col container">
-                            <p>Web design - 87</p>
-                            <p>Mobile App Design - 64</p>
-                            <p>Brand Identity - 37</p>
+                        <div class="call-now d-flex py-4">
+                            <div>
+                                <span class="fa fa-phone-alt"></span>
+                                <img src="pngwing.com.png" alt="phone_logo" class="phone_logo">
+                            </div>
+                            <div class="ms-4">
+                                <p>Call us now</p>
+                                <h5>(+91)-8794192730</h5>
+                                <h5>(+91)-9807662573</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col container-fluid border">
-                <!-- Right with Picture -->
+        </div>
+    </section>
+
+    <!-- About Section Exit  -->
+
+    <!-- Service Section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>Service Offers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, impedit.
+                        <br class="d-none d-lg-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vel.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="Icon/HTM_CSS_React_JS.png" alt="Crad_image" class="img-fluid">
+                        </div>
+                        <h5>Front-End Developement</h5>
+                        <p>Using Reeact Js , HTML , CSS , </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="Icon/Node.png" alt="Crad_image" class="img-fluid">
+                        </div>
+                        <h5>Back-End Develoement </h5>
+                        <p>Using NodeJs , ExpressJS , MongoDB - Routes , EJS , MVC etc</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="Icon/DSA.png" alt="Crad_image" class="img-fluid">
+                        </div>
+                        <h5>DS & Alog</h5>
+                        <p> Practice Coding Problem in Platform like - leetcode , GFG , HackerRank and HackerEarth.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="Icon/release.png" alt="Crad_image" class="img-fluid">
+                        </div>
+                        <h5>Release Management & Change Management</h5>
+                        <p> Revtrace Tool , Service Now , SharePoint , Migartion , TR and RT Creation , Access Admintration </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Sevice Section End -->
+
+
+    <!-- Porfolio Section -->
+    <section id="portfolio" class="portfolio_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-left mb-md-5 mb-2">
+                    <h2>Quality Work <br> Recently Done Project</h2>
+
+                </div>
+            </div>
+            <!-- Tabs Start here  -->
+            <div class="row">
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                      type="button" role="tab" aria-controls="pills-home" aria-selected="true">Popular</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" 
+                      type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Latest</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" 
+                      type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Upcoming</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" 
+                      type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                    </li> -->
+                </ul>
+
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="Icon/dumy_Tracker_dashboard.png" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="Icon/dumy_cbt_dashboard.png" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Computer Based Test</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="Icon/dumy_ngo_portal.jpg" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">NGO Dashboard</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="protfolio-img">
+                                    <!-- Remove the inline length and with once replace the image -->
+                                    <img src="#" alt="Project_Preview" class="img-fluid">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Change Tracker</h5>
+                                <p>Track the Upcoming plaform changes and keep status report !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div> -->
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Porfolio Section End -->
+
+
+    <!-- Block Section  -->
+
+    <section id="blog" class="blog_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>Blog</h2>
+                    <p>Some text before the break <br class="d-none" d-lg-block> some text</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="Icon/Social-Cover.webp" alt="Blog_image" class="img-fluid">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">Social Life</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">Enjoy Social Life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="Icon/filipino-food.jpg" alt="Blog_image" class="img-fluid">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">Food</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">Enjoy Social Life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="Icon/Social-Cover.webp" alt="Blog_image" class="img-fluid">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">Social Life</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">Enjoy Social Life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Block Section End -->
+
+    <!-- Footer Section  -->
+    <!-- Contact Section  -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 newsletter text-center px-4">
+                    <div>
+                        <h3 class="text-white">get update from anywhere</h3>
+                        <p class="text-white">Some txte that is a text of the tetx </p>
+                        <form action="" class="row g-3 justify-content-center mt-4">
+                            <div class="col col-sm-6 col-lg-4">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="col col-auto">
+                                <button type="submit" class="main-btn secondary-btn border-white mb-3">Get Started</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <!-- fotterpart -->
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <img src="Icon/page_logo.png" alt="footer-logo" class="img-fluid">
+                    </div>
+                    <div class="my-4 social-icons">
+                        <h5>Follow Me</h5>
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li><a href="#"><i class="fab fa-facebook">F</i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter">T</i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram">I</i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube">Y</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <p class="footer-text text-center my-2">Copyright © 2023 All rights reserved </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End  -->
+
+
 </body>
 </html>
